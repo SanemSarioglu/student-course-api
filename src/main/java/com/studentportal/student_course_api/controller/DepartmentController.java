@@ -1,8 +1,9 @@
 package com.studentportal.student_course_api.controller;
 
-import com.studentportal.student_course_api.model.Department;
-import com.studentportal.student_course_api.service.DepartmentService; // Service sınıfını kullanmak için
+import com.studentportal.student_course_api.dto.DepartmentDTO;
+import com.studentportal.student_course_api.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,32 +11,37 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/departments")
-@CrossOrigin(origins = "${cors.allowed-origins}")
 public class DepartmentController {
 
+    private final DepartmentService departmentService;
+
     @Autowired
-    private DepartmentService departmentService; // Repository yerine Service enjekte edilir
+    public DepartmentController(DepartmentService departmentService) {
+        this.departmentService = departmentService;
+    }
 
     @GetMapping
-    public List<Department> getAllDepartments() {
-        return departmentService.getAllDepartments();
+    public ResponseEntity<List<DepartmentDTO>> getAllDepartments() {
+        List<DepartmentDTO> departments = departmentService.getAllDepartments();
+        return ResponseEntity.ok(departments);
     }
 
     @GetMapping("/{code}")
-    public ResponseEntity<Department> getDepartmentByCode(@PathVariable String code) {
+    public ResponseEntity<DepartmentDTO> getDepartmentByCode(@PathVariable String code) {
         return departmentService.getDepartmentByCode(code)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public Department createDepartment(@RequestBody Department department) {
-        return departmentService.createDepartment(department);
+    public ResponseEntity<DepartmentDTO> createDepartment(@RequestBody DepartmentDTO departmentDTO) {
+        DepartmentDTO createdDepartment = departmentService.createDepartment(departmentDTO);
+        return new ResponseEntity<>(createdDepartment, HttpStatus.CREATED);
     }
 
     @PutMapping("/{code}")
-    public ResponseEntity<Department> updateDepartment(@PathVariable String code, @RequestBody Department departmentDetails) {
-        return departmentService.updateDepartment(code, departmentDetails)
+    public ResponseEntity<DepartmentDTO> updateDepartment(@PathVariable String code, @RequestBody DepartmentDTO departmentDTO) {
+        return departmentService.updateDepartment(code, departmentDTO)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -44,8 +50,7 @@ public class DepartmentController {
     public ResponseEntity<Void> deleteDepartment(@PathVariable String code) {
         if (departmentService.deleteDepartment(code)) {
             return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
         }
+        return ResponseEntity.notFound().build();
     }
 }

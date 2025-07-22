@@ -1,42 +1,47 @@
 package com.studentportal.student_course_api.controller;
 
-import com.studentportal.student_course_api.model.Enrollment;
-import com.studentportal.student_course_api.service.EnrollmentService; // Use the service layer
+import com.studentportal.student_course_api.dto.EnrollmentDTO;
+import com.studentportal.student_course_api.service.EnrollmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/enrollments")
-@CrossOrigin(origins = "${cors.allowed-origins}")
 public class EnrollmentController {
 
+    private final EnrollmentService enrollmentService;
+
     @Autowired
-    private EnrollmentService enrollmentService;
+    public EnrollmentController(EnrollmentService enrollmentService) {
+        this.enrollmentService = enrollmentService;
+    }
 
     @GetMapping
-    public List<Enrollment> getAllEnrollments() {
-        return enrollmentService.getAllEnrollments();
+    public ResponseEntity<List<EnrollmentDTO>> getAllEnrollments() {
+        List<EnrollmentDTO> enrollments = enrollmentService.getAllEnrollments();
+        return ResponseEntity.ok(enrollments);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Enrollment> getEnrollmentById(@PathVariable Integer id) {
+    public ResponseEntity<EnrollmentDTO> getEnrollmentById(@PathVariable Integer id) {
         return enrollmentService.getEnrollmentById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public Enrollment createEnrollment(@RequestBody Enrollment enrollment) {
-        return enrollmentService.createEnrollment(enrollment);
+    public ResponseEntity<EnrollmentDTO> createEnrollment(@RequestBody EnrollmentDTO enrollmentDTO) {
+        EnrollmentDTO createdEnrollment = enrollmentService.createEnrollment(enrollmentDTO);
+        return new ResponseEntity<>(createdEnrollment, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Enrollment> updateEnrollment(@PathVariable Integer id, @RequestBody Enrollment enrollmentDetails) {
-        return enrollmentService.updateEnrollment(id, enrollmentDetails)
+    public ResponseEntity<EnrollmentDTO> updateEnrollment(@PathVariable Integer id, @RequestBody EnrollmentDTO enrollmentDTO) {
+        return enrollmentService.updateEnrollment(id, enrollmentDTO)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -45,9 +50,7 @@ public class EnrollmentController {
     public ResponseEntity<Void> deleteEnrollment(@PathVariable Integer id) {
         if (enrollmentService.deleteEnrollment(id)) {
             return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
         }
+        return ResponseEntity.notFound().build();
     }
 }
-

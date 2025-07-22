@@ -1,42 +1,47 @@
 package com.studentportal.student_course_api.controller;
 
-import com.studentportal.student_course_api.model.Instructor;
-import com.studentportal.student_course_api.service.InstructorService; // Use the service layer
+import com.studentportal.student_course_api.dto.InstructorDTO;
+import com.studentportal.student_course_api.service.InstructorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/instructors")
-@CrossOrigin(origins = "${cors.allowed-origins}")
 public class InstructorController {
 
+    private final InstructorService instructorService;
+
     @Autowired
-    private InstructorService instructorService;
+    public InstructorController(InstructorService instructorService) {
+        this.instructorService = instructorService;
+    }
 
     @GetMapping
-    public List<Instructor> getAllInstructors() {
-        return instructorService.getAllInstructors();
+    public ResponseEntity<List<InstructorDTO>> getAllInstructors() {
+        List<InstructorDTO> instructors = instructorService.getAllInstructors();
+        return ResponseEntity.ok(instructors);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Instructor> getInstructorById(@PathVariable Integer id) {
+    public ResponseEntity<InstructorDTO> getInstructorById(@PathVariable Integer id) {
         return instructorService.getInstructorById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public Instructor createInstructor(@RequestBody Instructor instructor) {
-        return instructorService.createInstructor(instructor);
+    public ResponseEntity<InstructorDTO> createInstructor(@RequestBody InstructorDTO instructorDTO) {
+        InstructorDTO createdInstructor = instructorService.createInstructor(instructorDTO);
+        return new ResponseEntity<>(createdInstructor, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Instructor> updateInstructor(@PathVariable Integer id, @RequestBody Instructor instructorDetails) {
-        return instructorService.updateInstructor(id, instructorDetails)
+    public ResponseEntity<InstructorDTO> updateInstructor(@PathVariable Integer id, @RequestBody InstructorDTO instructorDTO) {
+        return instructorService.updateInstructor(id, instructorDTO)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -45,8 +50,7 @@ public class InstructorController {
     public ResponseEntity<Void> deleteInstructor(@PathVariable Integer id) {
         if (instructorService.deleteInstructor(id)) {
             return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
         }
+        return ResponseEntity.notFound().build();
     }
 }
