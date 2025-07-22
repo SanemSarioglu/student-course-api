@@ -4,12 +4,15 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import java.math.BigDecimal;
 
-@Entity
-@Table(name = "courses")
+
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "courses")
 public class Course {
     @Id
     @Column(name = "course_code", length = 20)
@@ -18,8 +21,8 @@ public class Course {
     @Column(name = "course_name", nullable = false, length = 100)
     private String courseName;
 
-    @Column(name = "credits", nullable = false, precision = 3, scale = 1)
-    private Double credits;
+    @Column(name = "credits", precision = 3, scale = 1)
+    private BigDecimal credits;
 
     @Column(name = "prerequisites")
     private String prerequisites;
@@ -36,5 +39,13 @@ public class Course {
 
     @Column(name = "instructor", length = 100)
     private String instructor;
+
+    public String getCourseName() {
+        return this.courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
 }
 
