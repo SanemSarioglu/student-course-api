@@ -1,16 +1,34 @@
 package com.studentportal.student_course_api.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
 
 @Entity
 @Table(name = "departments")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Department {
+    public String getDepartmentCode() {
+        return departmentCode;
+    }
+
+    public void setDepartmentCode(String departmentCode) {
+        this.departmentCode = departmentCode;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    public String getHeadOfDepartment() {
+        return headOfDepartment;
+    }
+
+    public void setHeadOfDepartment(String headOfDepartment) {
+        this.headOfDepartment = headOfDepartment;
+    }
+
     @Id
     @Column(name = "department_code", length = 20)
     private String departmentCode;

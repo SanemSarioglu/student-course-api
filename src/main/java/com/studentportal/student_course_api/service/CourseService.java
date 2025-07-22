@@ -32,7 +32,7 @@ public class CourseService {
                     course.setCourseName(courseDetails.getCourseName());
                     course.setCredits(courseDetails.getCredits());
                     course.setPrerequisites(courseDetails.getPrerequisites());
-                    course.setIsActive(courseDetails.getIsActive());
+                    course.setActive(courseDetails.getActive());
                     course.setAvailableForSemester(courseDetails.getAvailableForSemester());
                     course.setInstructor(courseDetails.getInstructor());
                     // For majorDepartment, you would typically fetch the Department entity

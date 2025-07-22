@@ -1,22 +1,73 @@
 package com.studentportal.student_course_api.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+
 import java.math.BigDecimal;
 
 
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "courses")
 public class Course {
     @Id
     @Column(name = "course_code", length = 20)
     private String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
+    }
+
+    public BigDecimal getCredits() {
+        return credits;
+    }
+
+    public void setCredits(BigDecimal credits) {
+        this.credits = credits;
+    }
+
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
+    }
+
+    public Department getMajorDepartment() {
+        return majorDepartment;
+    }
+
+    public void setMajorDepartment(Department majorDepartment) {
+        this.majorDepartment = majorDepartment;
+    }
+
+    public String getAvailableForSemester() {
+        return availableForSemester;
+    }
+
+    public void setAvailableForSemester(String availableForSemester) {
+        this.availableForSemester = availableForSemester;
+    }
+
+    public String getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(String instructor) {
+        this.instructor = instructor;
+    }
 
     @Column(name = "course_name", nullable = false, length = 100)
     private String courseName;

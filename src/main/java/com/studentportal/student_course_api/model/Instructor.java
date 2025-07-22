@@ -1,20 +1,47 @@
 package com.studentportal.student_course_api.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
 
 @Entity
 @Table(name = "instructors")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Instructor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "instructor_id")
     private Integer instructorId;
+
+    public Integer getInstructorId() {
+        return instructorId;
+    }
+
+    public void setInstructorId(Integer instructorId) {
+        this.instructorId = instructorId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Column(name = "first_name", nullable = false, length = 100)
     private String firstName;
