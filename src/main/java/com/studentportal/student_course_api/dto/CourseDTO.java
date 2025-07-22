@@ -1,6 +1,20 @@
 package com.studentportal.student_course_api.dto;
 
 public class CourseDTO {
+
+    public CourseDTO() {
+    }
+
+    public CourseDTO(String courseCode, String courseName, Double credits, String prerequisites, Boolean isActive, String majorCode, String availableForSemester, String instructor) {
+        this.courseCode = courseCode;
+        this.courseName = courseName;
+        this.credits = credits;
+        this.prerequisites = prerequisites;
+        this.isActive = isActive;
+        this.majorCode = majorCode;
+        this.availableForSemester = availableForSemester;
+        this.instructor = instructor;
+    }
     private String courseCode;
     private String courseName;
 

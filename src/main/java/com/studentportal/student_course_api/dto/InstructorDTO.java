@@ -1,6 +1,16 @@
 package com.studentportal.student_course_api.dto;
 
 public class InstructorDTO {
+
+    public InstructorDTO() {
+    }
+
+    public InstructorDTO(Integer instructorId, String firstName, String lastName, String email) {
+        this.instructorId = instructorId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
     private Integer instructorId;
 
     public Integer getInstructorId() {

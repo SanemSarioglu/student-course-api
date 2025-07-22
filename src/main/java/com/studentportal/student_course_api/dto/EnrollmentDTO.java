@@ -3,6 +3,18 @@ package com.studentportal.student_course_api.dto;
 import java.time.LocalDateTime;
 
 public class EnrollmentDTO {
+
+    public EnrollmentDTO() {
+    }
+
+    public EnrollmentDTO(Integer enrollmentId, Integer studentId, Integer sectionId, LocalDateTime enrollmentDate, String grade, String status) {
+        this.enrollmentId = enrollmentId;
+        this.studentId = studentId;
+        this.sectionId = sectionId;
+        this.enrollmentDate = enrollmentDate;
+        this.grade = grade;
+        this.status = status;
+    }
     private Integer enrollmentId;
 
     public Integer getEnrollmentId() {

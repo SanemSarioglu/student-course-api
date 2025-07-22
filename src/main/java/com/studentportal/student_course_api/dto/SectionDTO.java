@@ -1,6 +1,21 @@
 package com.studentportal.student_course_api.dto;
 
 public class SectionDTO {
+
+    public SectionDTO() {
+    }
+
+    public SectionDTO(Integer sectionId, String courseCode, String semester, Integer year, Integer instructorId, Integer capacity, Integer currentEnrollment, String status, String sectionNumber) {
+        this.sectionId = sectionId;
+        this.courseCode = courseCode;
+        this.semester = semester;
+        this.year = year;
+        this.instructorId = instructorId;
+        this.capacity = capacity;
+        this.currentEnrollment = currentEnrollment;
+        this.status = status;
+        this.sectionNumber = sectionNumber;
+    }
     private Integer sectionId;
 
     public Integer getSectionId() {

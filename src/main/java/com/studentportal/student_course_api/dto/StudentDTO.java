@@ -1,6 +1,18 @@
 package com.studentportal.student_course_api.dto;
 
 public class StudentDTO {
+
+    public StudentDTO() {
+    }
+
+    public StudentDTO(Integer id, String firstName, String lastName, String semester, String departmentCode) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.semester = semester;
+        this.departmentCode = departmentCode;
+    }
+
     public Integer getId() {
         return id;
     }

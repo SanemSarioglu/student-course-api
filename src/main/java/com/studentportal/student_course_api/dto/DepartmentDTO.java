@@ -1,6 +1,16 @@
 package com.studentportal.student_course_api.dto;
 
 public class DepartmentDTO {
+
+    public DepartmentDTO() {
+    }
+
+    public DepartmentDTO(String departmentCode, String departmentName, String headOfDepartment) {
+        this.departmentCode = departmentCode;
+        this.departmentName = departmentName;
+        this.headOfDepartment = headOfDepartment;
+    }
+
     public String getDepartmentCode() {
         return departmentCode;
     }
