@@ -1,5 +1,9 @@
 package com.studentportal.student_course_api.dto;
 
+import org.springframework.http.ResponseEntity;
+
+import java.util.Optional;
+
 public class DepartmentDTO {
 
     public DepartmentDTO() {
@@ -38,5 +42,6 @@ public class DepartmentDTO {
     private String departmentCode;
     private String departmentName;
     private String headOfDepartment;
+
 }
 
