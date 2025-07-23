@@ -20,8 +20,9 @@ public interface CourseMapper {
     // Maps CourseDTO to Course entity
     // We ignore 'sections' and 'department' collections/objects for simplicity in this direct mapping.
     // The 'department' object would typically be fetched and set in the service layer using the departmentCode from DTO.
-    @Mapping(target = "sections", ignore = true)
-    @Mapping(target = "department", ignore = true) // Department object needs to be set manually in service
+    //@Mapping(target = "sections", ignore = true)
+    //@Mapping(target = "department", ignore = true) // Department object needs to be set manually in service
+    @Mapping(target = "majorDepartment", ignore = true)
     Course toEntity(CourseDTO courseDTO);
 
     List<CourseDTO> toDtoList(List<Course> courses);

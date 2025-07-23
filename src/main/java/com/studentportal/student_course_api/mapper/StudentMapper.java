@@ -15,8 +15,7 @@ public interface StudentMapper {
     StudentDTO toDto(Student student);
 
     // Maps StudentDTO to Student entity
-    // Ignore 'enrollments' and 'department' collections/objects.
-    @Mapping(target = "enrollments", ignore = true)
+    //@Mapping(target = "enrollments", ignore = true)
     @Mapping(target = "department", ignore = true) // Department object needs to be set manually in service
     Student toEntity(StudentDTO studentDTO);
 

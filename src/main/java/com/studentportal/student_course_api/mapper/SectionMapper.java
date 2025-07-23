@@ -17,7 +17,7 @@ public interface SectionMapper {
 
     // Maps SectionDTO to Section entity
     // Ignore 'enrollments', 'course', and 'instructor' collections/objects.
-    @Mapping(target = "enrollments", ignore = true)
+    //@Mapping(target = "enrollments", ignore = true)
     @Mapping(target = "course", ignore = true) // Course object needs to be set manually in service
     @Mapping(target = "instructor", ignore = true) // Instructor object needs to be set manually in service
     Section toEntity(SectionDTO sectionDTO);

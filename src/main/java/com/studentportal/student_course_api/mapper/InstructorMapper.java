@@ -11,7 +11,7 @@ import java.util.List;
 public interface InstructorMapper {
 
     // Maps Instructor entity to InstructorDTO
-    @Mapping(source = "department.departmentCode", target = "departmentCode") // Map department object's code to DTO's code
+   //@Mapping(source = "departmentCode", target = "departmentCode") // Map department object's code to DTO's code
     InstructorDTO toDto(Instructor instructor);
 
     // Maps InstructorDTO to Instructor entity

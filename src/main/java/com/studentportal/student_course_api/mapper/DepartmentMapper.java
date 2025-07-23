@@ -17,8 +17,8 @@ public interface DepartmentMapper {
     // We ignore 'courses' and 'students' collections here because they are complex relationships
     // that are usually not mapped directly in a simple DTO conversion to avoid circular references
     // or to simplify the DTO. You would handle these relationships in your service logic.
-    @Mapping(target = "courses", ignore = true)
-    @Mapping(target = "students", ignore = true)
+    //@Mapping(target = "courses", ignore = true)
+    //@Mapping(target = "students", ignore = true)
     Department toEntity(DepartmentDTO departmentDTO);
 
     // Maps a list of Department entities to a list of DepartmentDTOs
