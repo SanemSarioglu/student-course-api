@@ -1,5 +1,6 @@
 package com.studentportal.student_course_api.service;
 
+import com.studentportal.student_course_api.exception.BadRequestException;
 import com.studentportal.student_course_api.exception.ConflictException;
 import com.studentportal.student_course_api.exception.ResourceNotFoundException;
 import com.studentportal.student_course_api.model.Instructor;
@@ -29,6 +30,9 @@ public class InstructorService {
         if (instructor.getInstructorId() != null && instructorRepository.existsById(instructor.getInstructorId())) {
             throw new ConflictException("Instructor with ID " + instructor.getInstructorId() + " already exists.");
         }
+        if (instructor.getDepartment() == null) {
+            throw new BadRequestException("Department cannot be null for an instructor.");
+        }
         return instructorRepository.save(instructor);
     }
 
@@ -38,8 +42,10 @@ public class InstructorService {
                     instructor.setFirstName(instructorDetails.getFirstName());
                     instructor.setLastName(instructorDetails.getLastName());
                     instructor.setEmail(instructorDetails.getEmail());
-                    // For department, you would typically fetch the Department entity
-                    // and set it here if the DTO provides a departmentCode.
+                    if (instructorDetails.getDepartment() == null) {
+                        throw new BadRequestException("Department cannot be null for an instructor.");
+                    }
+                    instructor.setDepartment(instructorDetails.getDepartment());
                     return instructorRepository.save(instructor);
                 }).orElseThrow(() -> new ResourceNotFoundException("Instructor not found with id " + id));
     }

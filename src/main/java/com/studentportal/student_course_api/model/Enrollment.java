@@ -58,7 +58,7 @@ public class Enrollment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "enrollment_id")
+    @Column(name = "enrollement_id")
     private Integer enrollmentId;
 
     @ManyToOne(fetch = FetchType.LAZY)
