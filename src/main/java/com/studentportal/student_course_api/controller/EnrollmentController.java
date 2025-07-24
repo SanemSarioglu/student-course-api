@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/enrollments")
+@RequestMapping("/api/enrollment")
 @CrossOrigin(origins = "${cors.allowed-origins}")
 public class EnrollmentController {
 

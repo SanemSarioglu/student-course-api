@@ -1,10 +1,12 @@
 package com.studentportal.student_course_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "enrollment")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Enrollment {
     public Integer getEnrollmentId() {
         return enrollmentId;
