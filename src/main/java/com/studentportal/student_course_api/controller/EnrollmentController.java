@@ -24,9 +24,8 @@ public class EnrollmentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Enrollment> getEnrollmentById(@PathVariable Integer id) {
-        return enrollmentService.getEnrollmentById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Enrollment enrollment = enrollmentService.getEnrollmentById(id);
+        return ResponseEntity.ok(enrollment);
     }
 
     @PostMapping
@@ -36,18 +35,14 @@ public class EnrollmentController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Enrollment> updateEnrollment(@PathVariable Integer id, @RequestBody Enrollment enrollmentDetails) {
-        return enrollmentService.updateEnrollment(id, enrollmentDetails)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Enrollment updatedEnrollment = enrollmentService.updateEnrollment(id, enrollmentDetails);
+        return ResponseEntity.ok(updatedEnrollment);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteEnrollment(@PathVariable Integer id) {
-        if (enrollmentService.deleteEnrollment(id)) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        enrollmentService.deleteEnrollment(id);
+        return ResponseEntity.noContent().build();
     }
 }
 

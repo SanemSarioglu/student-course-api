@@ -1,5 +1,7 @@
 package com.studentportal.student_course_api.service;
 
+import com.studentportal.student_course_api.exception.ConflictException;
+import com.studentportal.student_course_api.exception.ResourceNotFoundException;
 import com.studentportal.student_course_api.model.Section;
 import com.studentportal.student_course_api.repository.SectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +20,19 @@ public class SectionService {
         return sectionRepository.findAll();
     }
 
-    public Optional<Section> getSectionById(Integer id) {
-        return sectionRepository.findById(id);
+    public Section getSectionById(Integer id) {
+        return sectionRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Section not found with id " + id));
     }
 
     public Section createSection(Section section) {
+        if (section.getSectionId() != null && sectionRepository.existsById(section.getSectionId())) {
+            throw new ConflictException("Section with ID " + section.getSectionId() + " already exists.");
+        }
         return sectionRepository.save(section);
     }
 
-    public Optional<Section> updateSection(Integer id, Section sectionDetails) {
+    public Section updateSection(Integer id, Section sectionDetails) {
         return sectionRepository.findById(id)
                 .map(section -> {
                     section.setSemester(sectionDetails.getSemester());
@@ -38,15 +44,14 @@ public class SectionService {
                     // For Course and Instructor, you would typically fetch these entities
                     // and set them here if the DTO provides courseCode and instructorId.
                     return sectionRepository.save(section);
-                });
+                }).orElseThrow(() -> new ResourceNotFoundException("Section not found with id " + id));
     }
 
-    public boolean deleteSection(Integer id) {
-        if (sectionRepository.existsById(id)) {
-            sectionRepository.deleteById(id);
-            return true;
+    public void deleteSection(Integer id) {
+        if (!sectionRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Section not found with id " + id);
         }
-        return false;
+        sectionRepository.deleteById(id);
     }
 }
 

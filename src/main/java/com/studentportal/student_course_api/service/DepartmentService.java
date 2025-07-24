@@ -1,5 +1,7 @@
 package com.studentportal.student_course_api.service;
 
+import com.studentportal.student_course_api.exception.ConflictException;
+import com.studentportal.student_course_api.exception.ResourceNotFoundException;
 import com.studentportal.student_course_api.model.Department;
 import com.studentportal.student_course_api.repository.DepartmentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,29 +20,32 @@ public class DepartmentService {
         return departmentRepository.findAll();
     }
 
-    public Optional<Department> getDepartmentByCode(String code) {
-        return departmentRepository.findById(code);
+    public Department getDepartmentByCode(String code) {
+        return departmentRepository.findById(code)
+                .orElseThrow(() -> new ResourceNotFoundException("Department not found with code " + code));
     }
 
     public Department createDepartment(Department department) {
+        if (departmentRepository.existsById(department.getDepartmentCode())) {
+            throw new ConflictException("Department with code " + department.getDepartmentCode() + " already exists.");
+        }
         return departmentRepository.save(department);
     }
 
-    public Optional<Department> updateDepartment(String code, Department departmentDetails) {
+    public Department updateDepartment(String code, Department departmentDetails) {
         return departmentRepository.findById(code)
                 .map(department -> {
                     department.setDepartmentName(departmentDetails.getDepartmentName());
                     department.setHeadOfDepartment(departmentDetails.getHeadOfDepartment());
                     return departmentRepository.save(department);
-                });
+                }).orElseThrow(() -> new ResourceNotFoundException("Department not found with code " + code));
     }
 
-    public boolean deleteDepartment(String code) {
-        if (departmentRepository.existsById(code)) {
-            departmentRepository.deleteById(code);
-            return true;
+    public void deleteDepartment(String code) {
+        if (!departmentRepository.existsById(code)) {
+            throw new ResourceNotFoundException("Department not found with code " + code);
         }
-        return false;
+        departmentRepository.deleteById(code);
     }
 }
 

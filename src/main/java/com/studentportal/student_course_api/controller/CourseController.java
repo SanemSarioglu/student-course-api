@@ -24,9 +24,8 @@ public class CourseController {
 
     @GetMapping("/{code}")
     public ResponseEntity<Course> getCourseByCode(@PathVariable String code) {
-        return courseService.getCourseByCode(code)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Course course = courseService.getCourseByCode(code);
+        return ResponseEntity.ok(course);
     }
 
     @PostMapping
@@ -36,17 +35,13 @@ public class CourseController {
 
     @PutMapping("/{code}")
     public ResponseEntity<Course> updateCourse(@PathVariable String code, @RequestBody Course courseDetails) {
-        return courseService.updateCourse(code, courseDetails)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Course updatedCourse = courseService.updateCourse(code, courseDetails);
+        return ResponseEntity.ok(updatedCourse);
     }
 
     @DeleteMapping("/{code}")
     public ResponseEntity<Void> deleteCourse(@PathVariable String code) {
-        if (courseService.deleteCourse(code)) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        courseService.deleteCourse(code);
+        return ResponseEntity.noContent().build();
     }
 }

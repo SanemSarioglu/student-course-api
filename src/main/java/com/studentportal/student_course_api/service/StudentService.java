@@ -1,5 +1,7 @@
 package com.studentportal.student_course_api.service;
 
+import com.studentportal.student_course_api.exception.ConflictException;
+import com.studentportal.student_course_api.exception.ResourceNotFoundException;
 import com.studentportal.student_course_api.model.Student;
 import com.studentportal.student_course_api.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +20,19 @@ public class StudentService {
         return studentRepository.findAll();
     }
 
-    public Optional<Student> getStudentById(Integer id) {
-        return studentRepository.findById(id);
+    public Student getStudentById(Integer id) {
+        return studentRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
     }
 
     public Student createStudent(Student student) {
+        if (student.getId() != null && studentRepository.existsById(student.getId())) {
+            throw new ConflictException("Student with ID " + student.getId() + " already exists.");
+        }
         return studentRepository.save(student);
     }
 
-    public Optional<Student> updateStudent(Integer id, Student studentDetails) {
+    public Student updateStudent(Integer id, Student studentDetails) {
         return studentRepository.findById(id)
                 .map(student -> {
                     student.setFirstName(studentDetails.getFirstName());
@@ -39,15 +45,14 @@ public class StudentService {
                     //    departmentRepository.findById(studentDetails.getDepartment().getDepartmentCode()).ifPresent(student::setDepartment);
                     // }
                     return studentRepository.save(student);
-                });
+                }).orElseThrow(() -> new ResourceNotFoundException("Student not found with id " + id));
     }
 
-    public boolean deleteStudent(Integer id) {
-        if (studentRepository.existsById(id)) {
-            studentRepository.deleteById(id);
-            return true;
+    public void deleteStudent(Integer id) {
+        if (!studentRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Student not found with id " + id);
         }
-        return false;
+        studentRepository.deleteById(id);
     }
 }
 

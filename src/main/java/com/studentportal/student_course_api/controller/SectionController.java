@@ -24,9 +24,8 @@ public class SectionController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Section> getSectionById(@PathVariable Integer id) {
-        return sectionService.getSectionById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Section section = sectionService.getSectionById(id);
+        return ResponseEntity.ok(section);
     }
 
     @PostMapping
@@ -36,17 +35,13 @@ public class SectionController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Section> updateSection(@PathVariable Integer id, @RequestBody Section sectionDetails) {
-        return sectionService.updateSection(id, sectionDetails)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Section updatedSection = sectionService.updateSection(id, sectionDetails);
+        return ResponseEntity.ok(updatedSection);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteSection(@PathVariable Integer id) {
-        if (sectionService.deleteSection(id)) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        sectionService.deleteSection(id);
+        return ResponseEntity.noContent().build();
     }
 }

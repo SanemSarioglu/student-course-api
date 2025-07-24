@@ -24,9 +24,8 @@ public class InstructorController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Instructor> getInstructorById(@PathVariable Integer id) {
-        return instructorService.getInstructorById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Instructor instructor = instructorService.getInstructorById(id);
+        return ResponseEntity.ok(instructor);
     }
 
     @PostMapping
@@ -36,17 +35,13 @@ public class InstructorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Instructor> updateInstructor(@PathVariable Integer id, @RequestBody Instructor instructorDetails) {
-        return instructorService.updateInstructor(id, instructorDetails)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Instructor updatedInstructor = instructorService.updateInstructor(id, instructorDetails);
+        return ResponseEntity.ok(updatedInstructor);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteInstructor(@PathVariable Integer id) {
-        if (instructorService.deleteInstructor(id)) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        instructorService.deleteInstructor(id);
+        return ResponseEntity.noContent().build();
     }
 }

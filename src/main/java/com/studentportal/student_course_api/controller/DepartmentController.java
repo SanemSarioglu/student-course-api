@@ -23,9 +23,8 @@ public class DepartmentController {
 
     @GetMapping("/{code}")
     public ResponseEntity<Department> getDepartmentByCode(@PathVariable String code) {
-        return departmentService.getDepartmentByCode(code)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Department department = departmentService.getDepartmentByCode(code);
+        return ResponseEntity.ok(department);
     }
 
     @PostMapping
@@ -35,17 +34,13 @@ public class DepartmentController {
 
     @PutMapping("/{code}")
     public ResponseEntity<Department> updateDepartment(@PathVariable String code, @RequestBody Department departmentDetails) {
-        return departmentService.updateDepartment(code, departmentDetails)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Department updatedDepartment = departmentService.updateDepartment(code, departmentDetails);
+        return ResponseEntity.ok(updatedDepartment);
     }
 
     @DeleteMapping("/{code}")
     public ResponseEntity<Void> deleteDepartment(@PathVariable String code) {
-        if (departmentService.deleteDepartment(code)) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        departmentService.deleteDepartment(code);
+        return ResponseEntity.noContent().build();
     }
 }
