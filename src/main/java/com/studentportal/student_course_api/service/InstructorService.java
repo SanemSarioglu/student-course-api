@@ -32,6 +32,8 @@ public class InstructorService {
                     instructor.setFirstName(instructorDetails.getFirstName());
                     instructor.setLastName(instructorDetails.getLastName());
                     instructor.setEmail(instructorDetails.getEmail());
+                    // For department, you would typically fetch the Department entity
+                    // and set it here if the DTO provides a departmentCode.
                     return instructorRepository.save(instructor);
                 });
     }
@@ -44,4 +46,5 @@ public class InstructorService {
         return false;
     }
 }
+
 

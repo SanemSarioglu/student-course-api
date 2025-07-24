@@ -38,4 +38,13 @@ public class InstructorDTO {
     private String firstName;
     private String lastName;
     private String email;
+    private String departmentCode;
+
+    public String getDepartmentCode() {
+        return departmentCode;
+    }
+
+    public void setDepartmentCode(String departmentCode) {
+        this.departmentCode = departmentCode;
+    }
 }

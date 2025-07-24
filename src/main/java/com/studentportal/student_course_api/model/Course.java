@@ -1,5 +1,6 @@
 package com.studentportal.student_course_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -8,6 +9,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "courses")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Course {
     @Id
     @Column(name = "course_code", length = 20)

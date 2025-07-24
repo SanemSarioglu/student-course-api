@@ -1,9 +1,11 @@
 package com.studentportal.student_course_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "departments")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Department {
     public String getDepartmentCode() {
         return departmentCode;

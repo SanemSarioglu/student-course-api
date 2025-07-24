@@ -51,4 +51,16 @@ public class Instructor {
 
     @Column(name = "email", unique = true, length = 100)
     private String email;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "department_code", referencedColumnName = "department_code")
+    private Department department;
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 }

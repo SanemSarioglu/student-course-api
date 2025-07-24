@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface InstructorRepository extends JpaRepository<Instructor, Integer> {
-    // Second type parameter (Integer) is the type of the primary key for Instructor (instructor_id is SERIAL/INT)
 }
