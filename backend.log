@@ -39,24 +39,24 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 
  :: Spring Boot ::                (v3.5.3)
 
-2025-07-29T10:12:24.233+03:00  INFO 71194 --- [           main] c.s.s.StudentCourseApiApplication        : Starting StudentCourseApiApplication using Java 24.0.1 with PID 71194 (/Users/sanemsarioglu/Desktop/summer-internship-Deka/App project/student-course-api/target/classes started by sanemsarioglu in /Users/sanemsarioglu/Desktop/summer-internship-Deka/App project/student-course-api)
-2025-07-29T10:12:24.234+03:00  INFO 71194 --- [           main] c.s.s.StudentCourseApiApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-07-29T10:12:24.562+03:00  INFO 71194 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-29T10:12:24.600+03:00  INFO 71194 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 6 JPA repository interfaces.
-2025-07-29T10:12:24.796+03:00  INFO 71194 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-29T10:12:24.805+03:00  INFO 71194 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-29T10:12:24.805+03:00  INFO 71194 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
-2025-07-29T10:12:24.830+03:00  INFO 71194 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-29T10:12:24.830+03:00  INFO 71194 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
-2025-07-29T10:12:24.918+03:00  INFO 71194 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-29T10:12:24.941+03:00  INFO 71194 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
-2025-07-29T10:12:24.957+03:00  INFO 71194 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-29T10:12:25.081+03:00  INFO 71194 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-29T10:12:25.100+03:00  INFO 71194 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-29T10:12:25.194+03:00  INFO 71194 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e795a1d
-2025-07-29T10:12:25.195+03:00  INFO 71194 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-29T10:12:25.211+03:00  WARN 71194 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-29T10:12:25.220+03:00  INFO 71194 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-07-29T10:43:51.057+03:00  INFO 78656 --- [           main] c.s.s.StudentCourseApiApplication        : Starting StudentCourseApiApplication using Java 24.0.1 with PID 78656 (/Users/sanemsarioglu/Desktop/summer-internship-Deka/App project/student-course-api/target/classes started by sanemsarioglu in /Users/sanemsarioglu/Desktop/summer-internship-Deka/App project/student-course-api)
+2025-07-29T10:43:51.058+03:00  INFO 78656 --- [           main] c.s.s.StudentCourseApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-07-29T10:43:51.404+03:00  INFO 78656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-29T10:43:51.449+03:00  INFO 78656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+2025-07-29T10:43:51.669+03:00  INFO 78656 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-29T10:43:51.678+03:00  INFO 78656 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-29T10:43:51.678+03:00  INFO 78656 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-29T10:43:51.705+03:00  INFO 78656 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-29T10:43:51.705+03:00  INFO 78656 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 624 ms
+2025-07-29T10:43:51.793+03:00  INFO 78656 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-29T10:43:51.818+03:00  INFO 78656 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-29T10:43:51.838+03:00  INFO 78656 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-29T10:43:51.971+03:00  INFO 78656 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-29T10:43:51.984+03:00  INFO 78656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-29T10:43:52.080+03:00  INFO 78656 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60fc7f43
+2025-07-29T10:43:52.081+03:00  INFO 78656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-29T10:43:52.101+03:00  WARN 78656 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-29T10:43:52.117+03:00  INFO 78656 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 15.13
@@ -64,15 +64,15 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-29T10:12:25.611+03:00  INFO 71194 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-29T10:12:25.634+03:00  INFO 71194 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-29T10:12:25.799+03:00  WARN 71194 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-29T10:12:25.819+03:00  INFO 71194 --- [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-07-29T10:12:26.012+03:00  INFO 71194 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-29T10:12:26.017+03:00  INFO 71194 --- [           main] c.s.s.StudentCourseApiApplication        : Started StudentCourseApiApplication in 1.957 seconds (process running for 2.114)
-2025-07-29T10:12:38.250+03:00  INFO 71194 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-29T10:12:38.251+03:00  INFO 71194 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-29T10:12:38.253+03:00  INFO 71194 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-29T10:43:52.544+03:00  INFO 78656 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-29T10:43:52.573+03:00  INFO 78656 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-29T10:43:52.753+03:00  WARN 78656 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-29T10:43:52.777+03:00  INFO 78656 --- [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-07-29T10:43:52.991+03:00  INFO 78656 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-29T10:43:52.997+03:00  INFO 78656 --- [           main] c.s.s.StudentCourseApiApplication        : Started StudentCourseApiApplication in 2.099 seconds (process running for 2.242)
+2025-07-29T10:44:08.507+03:00  INFO 78656 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-29T10:44:08.508+03:00  INFO 78656 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-29T10:44:08.508+03:00  INFO 78656 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 Hibernate: 
     select
         s1_0.id,
@@ -127,6 +127,523 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
 Hibernate: 
     select
         c1_0.course_code,
@@ -265,6 +782,2350 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
 Hibernate: 
     select
         e1_0.enrollement_id,
@@ -847,13 +3708,16 @@ Hibernate:
         students s1_0
 Hibernate: 
     select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
     from
-        departments d1_0 
-    where
-        d1_0.department_code=?
+        courses c1_0
 Hibernate: 
     select
         e1_0.enrollement_id,
@@ -866,6 +3730,203 @@ Hibernate:
         enrollment e1_0
 Hibernate: 
     select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
         c1_0.course_code,
         c1_0.available_for_semester,
         c1_0.course_name,
@@ -887,6 +3948,21 @@ Hibernate:
         d1_0.department_code=?
 Hibernate: 
     select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
         d1_0.department_code,
         d1_0.department_name,
         d1_0.head_of_department 
@@ -894,6 +3970,40 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
 Hibernate: 
     select
         d1_0.department_code,
@@ -923,33 +4033,6 @@ Hibernate:
         students s1_0 
     where
         s1_0.id=?
-Hibernate: 
-    select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
-Hibernate: 
-    select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
-Hibernate: 
-    select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
 Hibernate: 
     select
         s1_0.section_id,
@@ -1037,6 +4120,17 @@ Hibernate:
         i1_0.instructor_id=?
 Hibernate: 
     select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
         d1_0.department_code,
         d1_0.department_name,
         d1_0.head_of_department 
@@ -1044,6 +4138,81 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
 Hibernate: 
     select
         s1_0.id,
@@ -1064,6 +4233,109 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
 Hibernate: 
     select
         d1_0.department_code,
@@ -1115,18 +4387,6 @@ Hibernate:
         i1_0.instructor_id=?
 Hibernate: 
     select
-        c1_0.course_code,
-        c1_0.available_for_semester,
-        c1_0.course_name,
-        c1_0.credits,
-        c1_0.instructor,
-        c1_0.is_active,
-        c1_0.major_code,
-        c1_0.prerequisites 
-    from
-        courses c1_0
-Hibernate: 
-    select
         s1_0.id,
         s1_0.department_code,
         s1_0.first_name,
@@ -1167,13 +4427,36 @@ Hibernate:
         c1_0.course_code=?
 Hibernate: 
     select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
     from
-        departments d1_0 
+        instructors i1_0 
     where
-        d1_0.department_code=?
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
 Hibernate: 
     select
         d1_0.department_code,
@@ -1183,6 +4466,35 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
 Hibernate: 
     select
         d1_0.department_code,
@@ -1205,15 +4517,6 @@ Hibernate:
         i1_0.instructor_id=?
 Hibernate: 
     select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
-Hibernate: 
-    select
         s1_0.id,
         s1_0.department_code,
         s1_0.first_name,
@@ -1223,24 +4526,6 @@ Hibernate:
         students s1_0 
     where
         s1_0.id=?
-Hibernate: 
-    select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
-Hibernate: 
-    select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
-    from
-        departments d1_0 
-    where
-        d1_0.department_code=?
 Hibernate: 
     select
         d1_0.department_code,
@@ -1267,13 +4552,55 @@ Hibernate:
         s1_0.section_id=?
 Hibernate: 
     select
-        d1_0.department_code,
-        d1_0.department_name,
-        d1_0.head_of_department 
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
     from
-        departments d1_0 
+        courses c1_0 
     where
-        d1_0.department_code=?
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
 Hibernate: 
     select
         c1_0.course_code,
@@ -1299,6 +4626,28 @@ Hibernate:
         d1_0.department_code=?
 Hibernate: 
     select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
         d1_0.department_code,
         d1_0.department_name,
         d1_0.head_of_department 
@@ -1306,6 +4655,1586 @@ Hibernate:
         departments d1_0 
     where
         d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        e1_0.enrollement_id,
+        e1_0.enrollment_date,
+        e1_0.grade,
+        e1_0.section_id,
+        e1_0.status,
+        e1_0.student_id 
+    from
+        enrollment e1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        i1_0.instructor_id,
+        i1_0.department_code,
+        i1_0.email,
+        i1_0.first_name,
+        i1_0.last_name 
+    from
+        instructors i1_0 
+    where
+        i1_0.instructor_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.department_code,
+        s1_0.first_name,
+        s1_0.last_name,
+        s1_0.semester 
+    from
+        students s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        d1_0.department_code,
+        d1_0.department_name,
+        d1_0.head_of_department 
+    from
+        departments d1_0 
+    where
+        d1_0.department_code=?
+Hibernate: 
+    select
+        s1_0.section_id,
+        s1_0.capacity,
+        s1_0.course_code,
+        s1_0.current_enrollment,
+        s1_0.instructor_id,
+        s1_0.section_number,
+        s1_0.semester,
+        s1_0.status,
+        s1_0.year 
+    from
+        sections s1_0 
+    where
+        s1_0.section_id=?
+Hibernate: 
+    select
+        c1_0.course_code,
+        c1_0.available_for_semester,
+        c1_0.course_name,
+        c1_0.credits,
+        c1_0.instructor,
+        c1_0.is_active,
+        c1_0.major_code,
+        c1_0.prerequisites 
+    from
+        courses c1_0 
+    where
+        c1_0.course_code=?
 Hibernate: 
     select
         d1_0.department_code,
