@@ -63,13 +63,7 @@ public class Course {
         this.availableForSemester = availableForSemester;
     }
 
-    public String getInstructor() {
-        return instructor;
-    }
 
-    public void setInstructor(String instructor) {
-        this.instructor = instructor;
-    }
 
     @Column(name = "course_name", nullable = false, length = 100)
     private String courseName;
@@ -90,8 +84,7 @@ public class Course {
     @Column(name = "available_for_semester", length = 50)
     private String availableForSemester;
 
-    @Column(name = "instructor", length = 100)
-    private String instructor;
+
 
     public String getCourseName() {
         return this.courseName;

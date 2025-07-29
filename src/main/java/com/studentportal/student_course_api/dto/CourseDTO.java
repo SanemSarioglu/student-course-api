@@ -60,18 +60,12 @@ public class CourseDTO {
         this.availableForSemester = availableForSemester;
     }
 
-    public String getInstructor() {
-        return instructor;
-    }
 
-    public void setInstructor(String instructor) {
-        this.instructor = instructor;
-    }
 
     private Double credits;
     private String prerequisites;
     private Boolean isActive;
     private String majorCode; // Only the foreign key, not the full Department object
     private String availableForSemester;
-    private String instructor;
+
 }

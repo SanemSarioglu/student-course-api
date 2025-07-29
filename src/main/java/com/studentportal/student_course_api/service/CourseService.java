@@ -40,7 +40,6 @@ public class CourseService {
                     course.setPrerequisites(courseDetails.getPrerequisites());
                     course.setActive(courseDetails.getActive());
                     course.setAvailableForSemester(courseDetails.getAvailableForSemester());
-                    course.setInstructor(courseDetails.getInstructor());
                     // For majorDepartment, you would typically fetch the Department entity
                     // and set it here if the DTO provides a majorCode.
                     return courseRepository.save(course);
