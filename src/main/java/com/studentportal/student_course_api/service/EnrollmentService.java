@@ -3,7 +3,9 @@ package com.studentportal.student_course_api.service;
 import com.studentportal.student_course_api.exception.ConflictException;
 import com.studentportal.student_course_api.exception.ResourceNotFoundException;
 import com.studentportal.student_course_api.model.Enrollment;
+import com.studentportal.student_course_api.model.Section;
 import com.studentportal.student_course_api.repository.EnrollmentRepository;
+import com.studentportal.student_course_api.repository.SectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,9 @@ public class EnrollmentService {
 
     @Autowired
     private EnrollmentRepository enrollmentRepository;
+
+    @Autowired
+    private SectionRepository sectionRepository;
 
     public List<Enrollment> getAllEnrollments() {
         return enrollmentRepository.findAll();
@@ -29,7 +34,9 @@ public class EnrollmentService {
         if (enrollment.getEnrollmentId() != null && enrollmentRepository.existsById(enrollment.getEnrollmentId())) {
             throw new ConflictException("Enrollment with ID " + enrollment.getEnrollmentId() + " already exists.");
         }
-        return enrollmentRepository.save(enrollment);
+        Enrollment savedEnrollment = enrollmentRepository.save(enrollment);
+        updateSectionEnrollmentCount(enrollment.getSection().getSectionId());
+        return savedEnrollment;
     }
 
     public Enrollment updateEnrollment(Integer id, Enrollment enrollmentDetails) {
@@ -45,10 +52,23 @@ public class EnrollmentService {
     }
 
     public void deleteEnrollment(Integer id) {
-        if (!enrollmentRepository.existsById(id)) {
-            throw new ResourceNotFoundException("Enrollment not found with id " + id);
-        }
+        Enrollment enrollment = enrollmentRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Enrollment not found with id " + id));
+        Integer sectionId = enrollment.getSection().getSectionId();
         enrollmentRepository.deleteById(id);
+        updateSectionEnrollmentCount(sectionId);
+    }
+
+    private void updateSectionEnrollmentCount(Integer sectionId) {
+        Section section = sectionRepository.findById(sectionId)
+                .orElseThrow(() -> new ResourceNotFoundException("Section not found with id " + sectionId));
+        
+        // Count enrollments for this section
+        long enrollmentCount = enrollmentRepository.countBySectionSectionId(sectionId);
+        
+        // Update the section's current enrollment count
+        section.setCurrentEnrollment((int) enrollmentCount);
+        sectionRepository.save(section);
     }
 }
 
